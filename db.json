@@ -1,31 +1,125 @@
 {
-  "posts": [
+  "user": [
+    {
+      "id": "js",
+      "name": "Joaquin Santuber",
+      "email": "joaquin@designthinking.de"
+    }
+  ],
+  "project": [
     {
       "id": 1,
-      "title": "Post 1"
+      "name": "Project 1",
+      "description": "Analysis of lawyer interview",
+      "created_at": "12/24/2018, 04:59:31",
+      "modified_at": "12/24/2018, 04:59:31",
+      "userId": "js1"
     },
     {
       "id": 2,
-      "title": "Post 2"
+      "name": "Project 2",
+      "description": "Stanford demo analysis",
+      "created_at": "06/10/2019, 04:59:31",
+      "modified_at": "07/25/2019, 04:59:31",
+      "userId": "js1"
     },
     {
       "id": 3,
-      "title": "Post 3"
+      "name": "Project 3",
+      "description": "Student assistants meetup event",
+      "created_at": "10/19/2020, 04:59:31",
+      "modified_at": "11/03/2020, 04:59:31",
+      "userId": "js1"
     }
   ],
-  "comments": [
+  "status": [
     {
-      "id": 1,
-      "body": "comment 1",
-      "postId": 1
+      "projectId": 1,
+      "pending_modules": [
+        "TXT3"
+      ],
+      "running_modules": [
+        "TXT2"
+      ],
+      "completed_modules": [
+        {
+          "name": "TXT1",
+          "artifact": 12,
+          "status_code": 0
+        }
+      ]
     },
     {
-      "id": 2,
-      "body": "comment 2",
-      "postId": 1
+      "projectId": 2,
+      "pending_modules": [
+        "TXT3"
+      ],
+      "running_modules": [
+        "TXT2"
+      ],
+      "completed_modules": [
+        {
+          "name": "TXT1",
+          "artifact": 12,
+          "status_code": -1
+        }
+      ]
+    },
+    {
+      "projectId": 3,
+      "pending_modules": [
+        "TXT3"
+      ],
+      "running_modules": [
+        "TXT2"
+      ],
+      "completed_modules": [
+        {
+          "name": "TXT1",
+          "artifact": 12,
+          "status_code": 1
+        }
+      ]
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "artifact": [
+    {
+      "projectId": 1,
+      "module_id": 1,
+      "base_video": 1,
+      "participant_id": 1,
+      "data": {}
+    },
+    {
+      "projectId": 1,
+      "module_id": 1,
+      "base_video": 2,
+      "participant_id": 2,
+      "data": {}
+    },
+    {
+      "projectId": 1,
+      "module_id": 1,
+      "base_video": 3,
+      "participant_id": 3,
+      "data": {}
+    }
+  ],
+  "artifacts": [
+    {
+      "artifactId": 1,
+      "module": 1,
+      "participant": 1
+    },
+    {
+      "artifactId": 1,
+      "module": 1,
+      "participant": 2
+    },
+    {
+      "artifactId": 1,
+      "module": 1,
+      "participant": 3
+    }
+  ]
 }
